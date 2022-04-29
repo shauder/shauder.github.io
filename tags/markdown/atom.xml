@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Simplify - Markdown</title>
+	<subtitle>Simplify is a Zola theme built with simple.css</subtitle>
+	<link href="https://sha.ne/tags/markdown/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sha.ne"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-02-02T00:00:00+00:00</updated>
+	<id>https://sha.ne/tags/markdown/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Sample Post</title>
+		<published>2022-02-02T00:00:00+00:00</published>
+		<updated>2022-02-02T00:00:00+00:00</updated>
+		<link href="https://sha.ne/content/blog/sample-post/" type="text/html"/>
+		<id>https://sha.ne/content/blog/sample-post/</id>
+		<content type="html">&lt;p&gt;This post shows a sample of basic Markdown syntax.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;image&quot;&gt;Image&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;nature.jpg&quot; alt=&quot;Nature&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The above photo is taken from &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unsplash.com&#x2F;photos&#x2F;1jlJrr4XGkU&quot;&gt;Unsplash&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;&#x2F;th&gt;&lt;th&gt;Age&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;John&lt;&#x2F;td&gt;&lt;td&gt;25&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Jane&lt;&#x2F;td&gt;&lt;td&gt;29&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;code-block&quot;&gt;Code Block&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#31333d;color:#ffffffc4;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#707180;&quot;&gt;&#x2F;&#x2F; Some Rust code
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3cbe3;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a2ba43;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  println!(&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#dbbb3d;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;Hello, world!&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#dbbb3d;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>

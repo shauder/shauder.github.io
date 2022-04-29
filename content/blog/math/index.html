@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+<title>Mathematical Notations Support - Simplify</title>
+
+    
+    <link rel="stylesheet" href="/css/simple.min.css">
+    
+    
+<style>
+.toc {
+    margin-bottom: 3rem;
+}
+</style>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+    
+    
+    
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            
+            <a href="&#x2F;">Home</a>
+            
+            <a href="&#x2F;blog&#x2F;">Blog</a>
+            
+            <a href="&#x2F;tags&#x2F;">Tags</a>
+            
+            <a href="&#x2F;categories&#x2F;">Categories</a>
+            
+            <a href="&#x2F;atom.xml&#x2F;">Feed</a>
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;tarunjana">Github</a>
+            
+        </nav>
+        
+        
+<h1>Mathematical Notations Support</h1>
+
+    </header>
+    
+    <main>
+        
+<article>
+    
+    <em>Published on: <time>07 Feb 2022</time></em>
+    
+    
+    <h2>Table of Contents</h2>
+    <ul class="toc">
+        
+        <li>
+            <a href="https://sha.ne/content/blog/math/#settings">Settings</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="https://sha.ne/content/blog/math/#enable-globally">Enable Globally</a>
+                </li>
+                
+                <li>
+                    <a href="https://sha.ne/content/blog/math/#per-section-basis">Per-section Basis</a>
+                </li>
+                
+                <li>
+                    <a href="https://sha.ne/content/blog/math/#per-page-basis">Per-page Basis</a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+        <li>
+            <a href="https://sha.ne/content/blog/math/#usage">Usage</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="https://sha.ne/content/blog/math/#inline-mathematics">Inline Mathematics</a>
+                </li>
+                
+                <li>
+                    <a href="https://sha.ne/content/blog/math/#block-mathematics">Block Mathematics</a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+    </ul>
+    
+    
+    <p>You can use <a rel="noopener" target="_blank" href="https://katex.org">$\KaTeX$</a> to render mathematical notations.</p>
+<h2 id="settings">Settings</h2>
+<p>You can enable the $\KaTeX$ support globally, per-section or per-page basis.</p>
+<h3 id="enable-globally">Enable Globally</h3>
+<p>To enable the $\KaTeX$ support globally, add <code>math = true</code> under <code>[extra]</code> of the <code>config.toml</code>
+at your site root. Now every section and page of your site will load the KaTeX <a rel="noopener" target="_blank" href="https://katex.org/docs/autorender.html">autorender extension</a>.</p>
+<pre data-lang="toml" style="background-color:#31333d;color:#ffffffc4;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[extra]
+</span><span style="color:#db7c6d;">math </span><span>= </span><span style="color:#ffffff;">true
+</span></code></pre>
+<h3 id="per-section-basis">Per-section Basis</h3>
+<p>To enable the $\KaTeX$ support in a particular section, add <code>math = true</code> under <code>[extra]</code> in the <code>[SECTION_NAME]/_index.md</code>. Now every page under this section will load the KaTeX
+<a rel="noopener" target="_blank" href="https://katex.org/docs/autorender.html">autorender extension</a>.</p>
+<pre data-lang="md" style="background-color:#31333d;color:#ffffffc4;" class="language-md "><code class="language-md" data-lang="md"><span>+++
+</span><span>[extra]
+</span><span>math = true
+</span><span>+++
+</span></code></pre>
+<h3 id="per-page-basis">Per-page Basis</h3>
+<p>To enable the $\KaTeX$ support in a particular page, add <code>math = true</code> under <code>[extra]</code> in the page's 
+frontmatter. Now this page will load the $\KaTeX$ <a rel="noopener" target="_blank" href="https://katex.org/docs/autorender.html">autorender extension</a>.</p>
+<pre data-lang="markdown" style="background-color:#31333d;color:#ffffffc4;" class="language-markdown "><code class="language-markdown" data-lang="markdown"><span>+++
+</span><span>[extra]
+</span><span>math = true
+</span><span>+++
+</span></code></pre>
+<p>It is a good practice to enable $\KaTeX$ support on a per-page basis, since this will only load the
+required files on that particular page, without affecting the page load speed of other pages.
+If your site is not math-heavy, please do NOT enable this feature globally or per-section basis.</p>
+<h2 id="usage">Usage</h2>
+<p>Wrap any <a rel="noopener" target="_blank" href="https://katex.org/docs/supported.html">valid</a> $\KaTeX$ syntax with <code>$...$</code> for inline 
+Mathematics and <code>$$...$$</code> for block Mathematics.</p>
+<h3 id="inline-mathematics">Inline Mathematics</h3>
+<p>This is the most beautiful equation I've ever seen: $e^{i\pi}+1=0$</p>
+<h3 id="block-mathematics">Block Mathematics</h3>
+<p>Some Mathematics in display mode is fair enough:</p>
+<p>$$
+\int_0^1 x^2 dx
+$$</p>
+
+</article>
+
+    </main>
+    
+    <footer>
+        
+        &copy; 2022 Simplify
+        
+        
+        · Powered by <a href="https://www.getzola.org/">Zola</a> and <a href="https://github.com/tarunjana/simplify/">Simplify</a>
+        
+    </footer>
+</body>
+
+</html>
