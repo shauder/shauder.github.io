@@ -1,6 +1,6 @@
 # Main settings
 theme = "simplify"
-base_url = "https://simplify-zola.netlify.app/"
+base_url = "https://shauder.github.io"
 title = "Simplify"
 description = "Simplify is a Zola theme built with simple.css"
 default_language = "en"
