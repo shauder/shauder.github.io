@@ -35,7 +35,7 @@ menu = [
     { name = "Tags", url = "/tags/" },
     { name = "Categories", url = "/categories/" },
     { name = "Feed", url = "/atom.xml/" },
-    { name = "Github", url = "https:/github.com/tarunjana" }
+    { name = "Github", url = "https://github.com/tarunjana" }
 ]
 # Avatar at homepage
 avatar_url = "/img/profile.jpg"
